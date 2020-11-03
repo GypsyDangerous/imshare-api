@@ -18,7 +18,7 @@ const fileUpload = multer({
 		},
 		filename: (req, file, callback) => {
 			const ext = MimeTypeMap[file.mimetype];
-			callback(null, uid(25) + "." + ext);
+			callback(null, `photo-${uid(12)}-${uid(12)}.${ext}`);
 		},
 	}),
 	fileFilter: (req, file, callback) => {
