@@ -5,6 +5,8 @@ const MimeTypeMap: any = {
 	"image/png": "png",
 	"image/jpeg": "jpeg",
 	"image/jpg": "jpg",
+	"image/svg+xml": "svg",
+	"image/gif": "gif"
 };
 
 const fileUpload = multer({
