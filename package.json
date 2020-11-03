@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "imshare-api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "test": "jest",
     "prettier": "npx eslint --fix . && prettier --write ."
   },
-  "author": "",
+  "author": "David Snyder",
   "license": "MIT",
   "devDependencies": {
     "@types/cors": "^2.8.8",
