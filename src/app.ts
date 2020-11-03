@@ -3,11 +3,12 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path"
 dotenv.config();
 
 // const middlewares = require("./middlewares");
-import {notFound, errorHandler} from "./middleware"
-import api from "./api"
+import { notFound, errorHandler } from "./middleware";
+import api from "./api";
 // const api = require("./api");
 
 const app = express();
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 		message: "🦄🌈✨👋🌎🌍🌏✨🌈🦄",
 	});
 });
+app.use("/uploads/images", express.static(path.join("uploads", "images")));
 
 app.use("/api/v1", api);
 
