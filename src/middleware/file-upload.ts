@@ -1,6 +1,6 @@
 import multer from "multer";
 import { v1 as uuidv1 } from "uuid";
-import { uid } from 'uid';
+import { uid } from 'uid/secure';
 
 const MimeTypeMap: any = {
 	"image/png": "png",
