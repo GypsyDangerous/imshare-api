@@ -15,11 +15,11 @@ const fileUpload = multer({
 	// limits: 500000,
 	storage: multer.diskStorage({
 		destination: (req, file, callback) => {
-			const dir = "uploads/images";
+			const dir = "./uploads/images";
 			if (!fs.existsSync(dir)) {
-				fs.mkdirSync(dir);
+				fs.mkdirSync(dir, { recursive: true });
 			}
-			callback(null, "uploads/images");
+			callback(null, dir);
 		},
 		filename: (req, file, callback) => {
 			const ext = MimeTypeMap[file.mimetype];
