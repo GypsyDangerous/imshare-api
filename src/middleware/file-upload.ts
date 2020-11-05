@@ -1,19 +1,24 @@
 import multer from "multer";
 import { v1 as uuidv1 } from "uuid";
-import { uid } from 'uid/secure';
+import { uid } from "uid/secure";
+import fs from "fs";
 
 const MimeTypeMap: any = {
 	"image/png": "png",
 	"image/jpeg": "jpeg",
 	"image/jpg": "jpg",
 	"image/svg+xml": "svg",
-	"image/gif": "gif"
+	"image/gif": "gif",
 };
 
 const fileUpload = multer({
 	// limits: 500000,
 	storage: multer.diskStorage({
 		destination: (req, file, callback) => {
+			const dir = "uploads/images";
+			if (!fs.existsSync(dir)) {
+				fs.mkdirSync(dir);
+			}
 			callback(null, "uploads/images");
 		},
 		filename: (req, file, callback) => {
