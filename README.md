@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://imshare.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -37,26 +37,27 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://im-share.herokuapp.com/uploads/images/photo-4b1f36f0eb1b-76576ff34203.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+This is my solution of the "Image Uploader" challenge from [Dev Challenges](https://devchallenges.io/)
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+You can see a demo [here](https://image-uploader-c94b5.web.app)
+
+What I learned/Improved:
+
+- Solidified my knowledge with multer for saving images on the backend
+- learned about react-dropzone package for drag and drop file uploads
+- more practice with express in typescript
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - [React](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
+- [Multer](https://www.npmjs.com/package/multer)
 - [Express](https://www.expressjs.com)
 - [Typescript](https://www.typescriptlang.org)
 
 ## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx) was to build an application to complete the given user stories.
 
@@ -68,25 +69,24 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/GypsyDangerous/imshare.git
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+[Drag and drop file uploads in React](https://www.youtube.com/watch?v=eftyBaoDkNA)
+[Image uploads with multer](https://medium.com/@SigniorGratiano/image-uploads-with-multer-f306469ef2)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+<!-- - Website [your-website.com](https://{your-web-site-link}) -->
+- GitHub [@gypsydangerous](https://{github.com/gypsydangerous})
+- Twitter [@snyderling_](https://{twitter.com/snyderling_})
